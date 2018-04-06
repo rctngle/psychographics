@@ -1,0 +1,9 @@
+body {
+	display: flex;
+	font-size: 12px;
+	font-family: sans-serif;
+}
+
+.column {
+	flex: 1 1 10%;
+}
