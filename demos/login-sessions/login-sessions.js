@@ -1,5 +1,6 @@
 let messages;
 
+
 fetch('/data/security.json', {
 	method: 'get'
 }).then((response) => {
