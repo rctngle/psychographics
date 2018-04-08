@@ -1,6 +1,6 @@
 let messages;
 
-fetch('../../data/messages.json', {
+fetch('/data/messages.json', {
 	method: 'get'
 }).then((response) => {
 	return response.json();
