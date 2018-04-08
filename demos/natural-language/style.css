@@ -1,5 +1,5 @@
 ul#sentences {
-
+	padding: 0;
 }
 
 ul#sentences li {
@@ -10,4 +10,8 @@ ul#sentences li {
 
 .score {
 	flex-basis: 200px;
+}
+
+input {
+	font-size: 30px;
 }
