@@ -1,6 +1,6 @@
 let messages;
 
-fetch('../../facebook/security.json', {
+fetch('../../data/security.json', {
 	method: 'get'
 }).then((response) => {
 	return response.json();
