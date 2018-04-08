@@ -46,3 +46,6 @@ While we’re using Facebook data for this workshop, the skills we will cover ca
 
 - Text to Speech
 	- https://github.com/Marak/say.js/
+	- https://github.com/NaturalNode/natural
+	- Markov chains
+	- https://cloud.google.com/vision/
