@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "afinn-165": "^1.0.2",
+    "json-stable-stringify": "^1.0.1",
     "natural": "^0.5.6"
   }
 }

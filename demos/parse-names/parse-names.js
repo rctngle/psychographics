@@ -1,4 +1,4 @@
-fetch('../../facebook/friends.json', {
+fetch('/data/friends.json', {
 	method: 'get'
 }).then((response) => {
 	return response.json();
