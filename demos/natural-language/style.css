@@ -1,0 +1,13 @@
+ul#sentences {
+
+}
+
+ul#sentences li {
+	display: flex;
+	flex-basis: 500px;
+	border-top: 1px solid #CCC;
+}
+
+.score {
+	flex-basis: 200px;
+}
