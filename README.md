@@ -19,9 +19,9 @@ After downloading, we will start by converting your data into a more useable for
 
 While statistics and data-visualisation will be interesting (and funny), we would like to go beyond this analysis to create an interface to deeper aspects of your own personal archive. 
 
-You will examine your data in detail, refine it, augment it with other sources of information in order distill new insights into yourselves, creating new “psychographic profiles”.
+You will examine your data in detail, refine it, augment it with other sources of information in order distill new insights into yourselves or the broader social media ecosystems.
 
-Your interface will be a tool to explore these profiles.
+Whether through classification, manipulation, or generation; your interface should document of expose these ecosystems.
 
 Your interface might also respond to input. Consider what inputs you could use to extract these insights: speech, gestures, text, hardware values, date ranges.
 
@@ -46,3 +46,6 @@ While we’re using Facebook data for this workshop, the skills we will cover ca
 
 - Text to Speech
 	- https://github.com/Marak/say.js/
+	- https://github.com/NaturalNode/natural
+	- Markov chains
+	- https://cloud.google.com/vision/
