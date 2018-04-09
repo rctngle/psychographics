@@ -42,10 +42,15 @@ While we’re using Facebook data for this workshop, the skills we will cover ca
 - Communication: WebSockets, WebRTC
 - Speech-to-text, image tagging, facial recognition
 
+# Install
+
+- [Command line tools](http://osxdaily.com/2014/02/12/install-command-line-tools-mac-os-x/)
+- [https://brew.sh/](Homebrew)
+
 # Resources
 
-- Text to Speech
-	- https://github.com/Marak/say.js/
-	- https://github.com/NaturalNode/natural
-	- Markov chains
-	- https://cloud.google.com/vision/
+- [Say.js](https://github.com/Marak/say.js/)
+- [Naturla language](https://github.com/NaturalNode/natural)
+- [Markov chains](https://www.npmjs.com/package/markov-chains-text)
+- [Google vision](https://cloud.google.com/vision/)
+
