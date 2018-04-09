@@ -8,7 +8,7 @@ const data = JSON.parse(messageJSON);
 
 const sentences = [];
 
-const friend = "Daniel Powers";
+const friend = "Lizzie Malcolm";
 
 data.forEach((thread) => {
 	thread.conversation.forEach((messages) => {

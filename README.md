@@ -45,7 +45,7 @@ While we’re using Facebook data for this workshop, the skills we will cover ca
 # Install
 
 - [Command line tools](http://osxdaily.com/2014/02/12/install-command-line-tools-mac-os-x/)
-- [https://brew.sh/](Homebrew)
+- [Homebrew](https://brew.sh/)
 
 # Resources
 
