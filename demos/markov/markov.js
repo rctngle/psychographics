@@ -8,16 +8,14 @@ const data = JSON.parse(messageJSON);
 
 const sentences = [];
 
-const friend = "Lizzie Malcolm";
+const friend = "Daniel Powers";
 
-data.forEach((thread) => {
-	thread.conversation.forEach((messages) => {
-		if (messages.user === friend) {
-			messages.messages.forEach((message) => {
-				if (message.text) {
-					sentences.push(message.text);
-				}
-			});
+data.threads.forEach((thread) => {
+	thread.messages.forEach((message) => {
+		if (message.sender === friend) {
+			if (message.message) {
+				sentences.push(message.message);
+			}
 		}
 	});
 });

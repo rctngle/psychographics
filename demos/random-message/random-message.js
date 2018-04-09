@@ -14,15 +14,9 @@ fetch('/data/messages.json', {
 
 
 function showRandomMessage(){
-	const idx = Math.floor(Math.random() * messages.length);
-	const message = messages[idx];
-	const cidx = Math.floor(Math.random() * message.conversation.length);
-	if(message.conversation.length === 0){
-		showRandomMessage();
-	} else {
-		const midx = Math.floor(Math.random() * message.conversation[cidx].messages.length);
-		if(message.conversation[cidx].messages.length !== 0){
-			document.querySelector('#message').textContent = message.conversation[cidx].messages[midx].text;	
-		}		
-	}	
+	const thread = messages.threads[Math.floor(Math.random() * messages.threads.length)];
+	const message = thread.messages[Math.floor(Math.random() * thread.messages.length)];
+
+	document.querySelector('#message').textContent = message.message;	
+
 }

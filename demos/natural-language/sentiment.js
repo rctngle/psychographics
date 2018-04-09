@@ -13,25 +13,21 @@ const messageJSON = fs.readFileSync(dataDir + '/messages.json', 'utf8').toString
 const data = JSON.parse(messageJSON);
 
 const sentences = [];
-data.forEach((thread) => {
-	thread.conversation.forEach((messages) => {
-		messages.messages.forEach((message) => {
-			if (message.text !== undefined) {
-				try {
-					const messageSentences = sentenceTokenizer.tokenize(message.text);	
-					messageSentences.forEach((msgSentence) => {
-						sentences.push({ text: msgSentence });
-					});	
-				} catch(e) {
 
-				}
-				
+data.threads.forEach((thread) => {
+	thread.messages.forEach((message) => {
+		if (message.message) {
+			try {
+				const messageSentences = sentenceTokenizer.tokenize(message.message);	
+				messageSentences.forEach((msgSentence) => {
+					sentences.push({ text: msgSentence });
+				});	
+			} catch(e) {
+
 			}
-			
-		});
+		}
 	});
 });
-
 
 function compare(a,b) {
   if (a.sentiment < b.sentiment)
