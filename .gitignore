@@ -2,5 +2,6 @@ data
 facebook
 node_modules
 *.json
+*.txt
 
 
