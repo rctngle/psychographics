@@ -1,0 +1,15 @@
+{
+  "name": "all-caps",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "array-unique": "^0.3.2",
+    "natural": "^0.5.6"
+  }
+}
