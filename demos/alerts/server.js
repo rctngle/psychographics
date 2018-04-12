@@ -4,7 +4,7 @@ const app = express();
 const moment = require('moment');
 const EOL = require('os').EOL;
 
-const mailsDir = '/Users/danielpowers/Dropbox/shared/gmail';
+const mailsDir = '';
 
 function dateSort(a, b) {
 	if (a.timestamp === b.timestamp) {
