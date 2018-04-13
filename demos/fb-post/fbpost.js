@@ -1,12 +1,17 @@
 // https://developers.facebook.com/tools/accesstoken/
 // https://developers.facebook.com/tools/explorer
+// control + C to stop
+// https://rectangle.design/dev/facebook/
 
-const postFrequency = 1; // seconds
+const postFrequency = 90; // seconds
 
 function getPostMessage(product, category) {
 	const templates = [
-		`OMG! ${product} is my favority ${category} of all time`,
+		`OMG! ${product} is my favourite ${category} of all time`,
 		`If you like ${category} you'll love ${product}!`,
+		`I wish I could have some ${product}, absolutely best ${category}!`,
+		`Really looking forward for ${product}, absolutely best ${category}!`,
+		`${product} is definitely my favourite ${category} ever!`,
 	];
 	return templates[Math.floor(Math.random() * templates.length)];
 }
@@ -16,9 +21,7 @@ const FB = require('fb');
 const fs = require('fs');
 const EOL = require('os').EOL;
 
-const userToken = "";
-const appToken = "";
-const accessToken = "";
+const accessToken = "EAAEOPyKsOwUBAMZA2gSrtZCcEhxZCho8QposEBZBb9IMJhPHgwvglvBblOLsUWmrfHFE7P22QOm1ukgLjTuEcnc173x8BZB299O7yJNGFxQLWARTRx2cNaBPZAQEy7BRXeqnoy1iVIlnmogTZBFqZBXSnhAFAtsjCN3JZB3S4mFKRXmfNVvIhy70nWxcWoiTQDMcb45k9rm2nVwZDZD";
 
 FB.setAccessToken(accessToken);
 
@@ -53,6 +56,10 @@ function createPost() {
 	const category = productCategory.category;
 	const body = getPostMessage(product, category);		
 	
+	fs.appendFileSync('posts.txt', body+EOL);
+
+	console.log(body);
+
 	FB.api('me/feed', 'post', { message: body }, function (res) {
 		if(!res || res.error) {
 			console.log(!res ? 'error occurred' : res.error);
